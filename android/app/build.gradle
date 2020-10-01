@@ -129,7 +129,7 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-     ndkVersion "21.3.6528147"
+    ndkVersion "21.3.6528147"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -142,6 +142,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+	// multiDexEnabled true
     }
     splits {
         abi {
@@ -181,6 +182,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+	    // minifyEnabled enableProguardInReleaseBuilds
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
