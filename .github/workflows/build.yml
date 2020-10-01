@@ -1,6 +1,8 @@
 # - name: React Native Android Build APK
 #   uses: realabbas/Github-Actions-React-Native@v1.1.2
 
+# or git update-index --chmod=+x gradlew
+
 name: react-native-android-build-apk
 on:
   push:
