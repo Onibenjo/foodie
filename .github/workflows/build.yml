@@ -36,5 +36,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           # name: app-release.apk armeabi-v7a
-          name: app-armeabi-v7a.apk
+          name: app-armeabi-v7a-release.apk
           path: android/app/build/outputs/apk/release/
